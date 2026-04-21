@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import { useEffect } from 'react';
+import { checkHealth } from './services/api';
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import Portfolio from './pages/Portfolio';
@@ -18,6 +19,12 @@ function ScrollToTop() {
 }
 
 function App() {
+  useEffect(() => {
+    checkHealth()
+      .then(data => console.log('Backend connected:', data))
+      .catch(err => console.error('Backend connection failed:', err));
+  }, []);
+
   return (
     <Router>
       <ScrollToTop />

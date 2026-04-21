@@ -3,6 +3,7 @@ package bootstrap
 import (
 	"log"
 	"github.com/gin-gonic/gin"
+	"jasa-printing-backend/internal/app/http/middleware"
 	"jasa-printing-backend/internal/app/providers"
 	"jasa-printing-backend/internal/config"
 	"jasa-printing-backend/routes"
@@ -25,6 +26,9 @@ func Bootstrap() *Application {
 		gin.SetMode(gin.ReleaseMode)
 	}
 	r := gin.Default()
+
+	// Use Middleware
+	r.Use(middleware.CORSMiddleware())
 
 	// Initialize Database
 	providers.InitDatabase(appConfig)
