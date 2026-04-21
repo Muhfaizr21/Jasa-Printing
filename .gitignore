@@ -3,3 +3,9 @@ node_modules/
 dist/
 .env
 .npm/
+
+# Go
+backend/.env
+backend/bin/
+backend/backend
+vendor/

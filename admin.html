@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&amp;family=Manrope:wght@300;400;500;600;700;800&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-tint": "#525f71",
+                        "secondary-container": "#fed488",
+                        "on-tertiary-fixed": "#002117",
+                        "on-primary-fixed-variant": "#3a4859",
+                        "secondary-fixed": "#ffdea5",
+                        "surface-container-low": "#f6f3f2",
+                        "inverse-primary": "#bac8dc",
+                        "surface-bright": "#fcf9f8",
+                        "on-primary": "#ffffff",
+                        "on-secondary": "#ffffff",
+                        "on-surface": "#1c1b1b",
+                        "on-tertiary-fixed-variant": "#0b513d",
+                        "tertiary-fixed": "#b0f0d6",
+                        "surface-container": "#f0edec",
+                        "surface-container-lowest": "#ffffff",
+                        "primary-container": "#0f1c2c",
+                        "on-surface-variant": "#44474c",
+                        "inverse-surface": "#313030",
+                        "surface-container-highest": "#e5e2e1",
+                        "surface-dim": "#dcd9d9",
+                        "secondary-fixed-dim": "#e9c176",
+                        "on-error": "#ffffff",
+                        "on-secondary-fixed-variant": "#5d4201",
+                        "on-background": "#1c1b1b",
+                        "primary": "#000000",
+                        "error-container": "#ffdad6",
+                        "on-primary-fixed": "#0f1c2c",
+                        "on-primary-container": "#778598",
+                        "background": "#fcf9f8",
+                        "on-secondary-container": "#785a1a",
+                        "primary-fixed": "#d6e4f9",
+                        "surface": "#fcf9f8",
+                        "primary-fixed-dim": "#bac8dc",
+                        "inverse-on-surface": "#f3f0ef",
+                        "error": "#ba1a1a",
+                        "surface-variant": "#e5e2e1",
+                        "on-tertiary": "#ffffff",
+                        "tertiary-fixed-dim": "#95d3ba",
+                        "outline": "#74777d",
+                        "surface-container-high": "#ebe7e7",
+                        "tertiary": "#000000",
+                        "secondary": "#775a19",
+                        "on-tertiary-container": "#528f79",
+                        "outline-variant": "#c4c6cc",
+                        "on-error-container": "#93000a",
+                        "tertiary-container": "#002117",
+                        "on-secondary-fixed": "#261900"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Noto Serif"],
+                        "body": ["Manrope"],
+                        "label": ["Manrope"]
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+
+        body {
+            font-family: 'Manrope', sans-serif;
+        }
+
+        .noto-serif {
+            font-family: 'Noto Serif', serif;
+        }
+
+        .manrope {
+            font-family: 'Manrope', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-background text-on-surface">
+    <!-- SideNavBar Component -->
+    <aside class="fixed left-0 top-0 h-screen w-64 bg-[#f6f3f2] dark:bg-[#0D1B2A] flex flex-col py-8 space-y-6 z-50">
+        <div class="px-6 mb-4">
+            <h1 class="font-serif text-[#775a19] text-xl tracking-tight">The Atelier</h1>
+            <p class="font-sans manrope uppercase tracking-widest text-[10px] text-zinc-500 mt-1">Premium Print Admin
+            </p>
+        </div>
+        <nav class="flex-grow">
+            <ul class="space-y-1">
+                <li>
+                    <a class="flex items-center px-6 py-3 bg-[#fed488] text-[#775a19] font-bold rounded-l-none rounded-r-full mr-4 transition-all duration-200"
+                        href="#">
+                        <span class="material-symbols-outlined mr-3">dashboard</span>
+                        <span class="font-sans manrope uppercase tracking-widest text-[10px]">Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="flex items-center px-6 py-3 text-zinc-600 dark:text-zinc-400 hover:bg-[#f0edec] dark:hover:bg-white/5 hover:translate-x-1 transition-all duration-200"
+                        href="#">
+                        <span class="material-symbols-outlined mr-3">print</span>
+                        <span class="font-sans manrope uppercase tracking-widest text-[10px]">Print Queue</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="flex items-center px-6 py-3 text-zinc-600 dark:text-zinc-400 hover:bg-[#f0edec] dark:hover:bg-white/5 hover:translate-x-1 transition-all duration-200"
+                        href="#">
+                        <span class="material-symbols-outlined mr-3">layers</span>
+                        <span class="font-sans manrope uppercase tracking-widest text-[10px]">Paper Inventory</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="flex items-center px-6 py-3 text-zinc-600 dark:text-zinc-400 hover:bg-[#f0edec] dark:hover:bg-white/5 hover:translate-x-1 transition-all duration-200"
+                        href="#">
+                        <span class="material-symbols-outlined mr-3">history_edu</span>
+                        <span class="font-sans manrope uppercase tracking-widest text-[10px]">Client Atelier</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="flex items-center px-6 py-3 text-zinc-600 dark:text-zinc-400 hover:bg-[#f0edec] dark:hover:bg-white/5 hover:translate-x-1 transition-all duration-200"
+                        href="#">
+                        <span class="material-symbols-outlined mr-3">settings</span>
+                        <span class="font-sans manrope uppercase tracking-widest text-[10px]">Studio Settings</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="px-6 mt-auto">
+            <button
+                class="w-full bg-primary text-on-primary py-3 px-4 rounded-lg flex items-center justify-center space-x-2 text-[10px] font-sans manrope uppercase tracking-widest active:opacity-80 transition-all">
+                <span class="material-symbols-outlined text-sm">add</span>
+                <span>New Print Job</span>
+            </button>
+        </div>
+    </aside>
+    <!-- TopNavBar Component -->
+    <header
+        class="fixed top-0 right-0 z-40 bg-[#fcf9f8]/70 backdrop-blur-xl border-b border-zinc-200/20 flex justify-between items-center w-[calc(100%-16rem)] ml-64 px-8 py-4">
+        <div class="flex items-center">
+            <div class="relative group">
+                <span
+                    class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-zinc-400 group-focus-within:text-secondary transition-colors">search</span>
+                <input
+                    class="bg-surface-container-low border-none rounded-full pl-10 pr-4 py-2 text-sm focus:ring-1 focus:ring-secondary w-64 transition-all"
+                    placeholder="Search Atelier Archives..." type="text" />
+            </div>
+        </div>
+        <div class="flex items-center space-x-6">
+            <div class="flex items-center space-x-4">
+                <button class="text-zinc-500 hover:text-[#775a19] transition-colors relative">
+                    <span class="material-symbols-outlined">notifications</span>
+                    <span class="absolute top-0 right-0 w-2 h-2 bg-secondary rounded-full border border-surface"></span>
+                </button>
+                <button class="text-zinc-500 hover:text-[#775a19] transition-colors">
+                    <span class="material-symbols-outlined">settings</span>
+                </button>
+            </div>
+            <div class="h-8 w-[1px] bg-zinc-200"></div>
+            <div class="flex items-center space-x-3">
+                <div class="text-right">
+                    <p class="text-xs font-bold leading-none text-[#0D1B2A]">Master Printer</p>
+                    <p class="text-[10px] text-zinc-500 uppercase tracking-widest">Admin</p>
+                </div>
+                <img alt="Master Printer Profile" class="w-8 h-8 rounded-full object-cover border border-secondary/20"
+                    data-alt="Close-up portrait of a professional artisan in a workshop setting with warm cinematic lighting"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCUTYP0Xk_R9GEPPF0AYisAOh0pm5fQHCXYxMWTJa9xcqzuaucGxxDB5M90ONdxwFtYGoFjxRDSzepAYIO47d5FbpeVc8iXQLpFKbXMPdX3GA1tEkBmI_KFZZuNH6ybYOmBgG2TkM1UK25dLnnUrcTCaCrYYLOc7VEcFZkICrTsKOA_SadS_yxh_4J59ESCLnLbMuEiYywmMUmo2QxVk1lgM9z8Sc2zwM8njwz54r7Lsf-RQACnfKJ1XbTzNCPM5J8uIV0c-wlUOSA" />
+            </div>
+        </div>
+    </header>
+    <!-- Main Content Canvas -->
+    <main class="ml-64 pt-24 px-8 pb-12">
+        <!-- Hero Header -->
+        <div class="mb-12 flex flex-col md:flex-row md:items-end justify-between gap-6">
+            <div class="max-w-2xl">
+                <h2 class="text-5xl font-serif text-[#0D1B2A] tracking-tighter mb-2">Studio Overview</h2>
+                <p class="text-on-surface-variant font-body leading-relaxed opacity-80">Precision in every fiber.
+                    Monitor your production workflow and inventory levels across the digital atelier.</p>
+            </div>
+            <div class="flex items-center space-x-2 text-secondary font-serif italic">
+                <span class="material-symbols-outlined">schedule</span>
+                <span>Last updated: Oct 24, 09:42 AM</span>
+            </div>
+        </div>
+        <!-- Overview Stats - Bento Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-12">
+            <div class="bg-surface-container p-6 rounded-xl border-l-4 border-secondary flex flex-col justify-between">
+                <p class="text-[10px] manrope uppercase tracking-[0.2em] text-on-surface-variant mb-4">Total Revenue</p>
+                <div class="flex items-baseline space-x-2">
+                    <span class="text-3xl noto-serif font-bold">$24,850</span>
+                    <span
+                        class="text-xs text-secondary-container bg-secondary px-2 py-0.5 rounded-full font-bold">+12%</span>
+                </div>
+            </div>
+            <div class="bg-surface-container p-6 rounded-xl flex flex-col justify-between">
+                <p class="text-[10px] manrope uppercase tracking-[0.2em] text-on-surface-variant mb-4">Pending Orders
+                </p>
+                <div class="flex items-baseline space-x-2">
+                    <span class="text-3xl noto-serif font-bold">18</span>
+                    <span class="text-xs text-secondary italic">Active Jobs</span>
+                </div>
+            </div>
+            <div class="bg-error-container p-6 rounded-xl flex flex-col justify-between">
+                <p class="text-[10px] manrope uppercase tracking-[0.2em] text-on-error-container mb-4">Low Stock Alerts
+                </p>
+                <div class="flex items-baseline space-x-2">
+                    <span class="text-3xl noto-serif font-bold text-on-error-container">03</span>
+                    <span class="material-symbols-outlined text-on-error-container text-sm">warning</span>
+                </div>
+            </div>
+            <div class="bg-surface-container p-6 rounded-xl flex flex-col justify-between">
+                <p class="text-[10px] manrope uppercase tracking-[0.2em] text-on-surface-variant mb-4">Active Clients
+                </p>
+                <div class="flex items-baseline space-x-2">
+                    <span class="text-3xl noto-serif font-bold">142</span>
+                    <span class="text-xs text-zinc-400 font-bold">Atelier Members</span>
+                </div>
+            </div>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+            <!-- Recent Orders Table Section (7/12) -->
+            <div class="lg:col-span-8 space-y-6">
+                <div class="bg-surface-container-low rounded-2xl overflow-hidden">
+                    <div class="px-8 py-6 flex items-center justify-between border-b border-white/10">
+                        <h3 class="noto-serif text-xl font-bold">Recent Orders</h3>
+                        <button
+                            class="text-xs manrope uppercase tracking-widest text-secondary font-bold hover:underline">View
+                            All Archive</button>
+                    </div>
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-left">
+                            <thead>
+                                <tr
+                                    class="bg-surface-container text-[10px] manrope uppercase tracking-widest text-zinc-500">
+                                    <th class="px-8 py-4 font-normal">Order ID</th>
+                                    <th class="px-8 py-4 font-normal">Client</th>
+                                    <th class="px-8 py-4 font-normal">Paper Stock</th>
+                                    <th class="px-8 py-4 font-normal">Status</th>
+                                    <th class="px-8 py-4 font-normal text-right">Value</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-zinc-200/10">
+                                <tr class="hover:bg-surface transition-colors cursor-pointer group">
+                                    <td class="px-8 py-5 text-sm font-bold">#PR-8821</td>
+                                    <td class="px-8 py-5 text-sm">Lumiere Gallery</td>
+                                    <td class="px-8 py-5">
+                                        <span
+                                            class="text-[10px] bg-secondary-container text-secondary px-2 py-1 rounded font-bold uppercase tracking-tighter">Cotton
+                                            Rag</span>
+                                    </td>
+                                    <td class="px-8 py-5">
+                                        <div class="flex items-center space-x-2 text-xs">
+                                            <span class="w-2 h-2 rounded-full bg-[#775a19] animate-pulse"></span>
+                                            <span class="text-secondary font-medium">Printing</span>
+                                        </div>
+                                    </td>
+                                    <td class="px-8 py-5 text-sm font-serif font-bold text-right">$1,240</td>
+                                </tr>
+                                <tr class="hover:bg-surface transition-colors cursor-pointer">
+                                    <td class="px-8 py-5 text-sm font-bold">#PR-8820</td>
+                                    <td class="px-8 py-5 text-sm">Estate of J. Russo</td>
+                                    <td class="px-8 py-5">
+                                        <span
+                                            class="text-[10px] bg-zinc-200 text-zinc-600 px-2 py-1 rounded font-bold uppercase tracking-tighter">Vellum</span>
+                                    </td>
+                                    <td class="px-8 py-5">
+                                        <div class="flex items-center space-x-2 text-xs text-zinc-500">
+                                            <span class="w-2 h-2 rounded-full bg-zinc-300"></span>
+                                            <span>Processing</span>
+                                        </div>
+                                    </td>
+                                    <td class="px-8 py-5 text-sm font-serif font-bold text-right">$890</td>
+                                </tr>
+                                <tr class="hover:bg-surface transition-colors cursor-pointer">
+                                    <td class="px-8 py-5 text-sm font-bold">#PR-8819</td>
+                                    <td class="px-8 py-5 text-sm">Vogue Creative</td>
+                                    <td class="px-8 py-5">
+                                        <span
+                                            class="text-[10px] bg-zinc-200 text-zinc-600 px-2 py-1 rounded font-bold uppercase tracking-tighter">Linen
+                                            Blend</span>
+                                    </td>
+                                    <td class="px-8 py-5">
+                                        <div class="flex items-center space-x-2 text-xs text-on-tertiary-container">
+                                            <span class="w-2 h-2 rounded-full bg-on-tertiary-container"></span>
+                                            <span>Shipped</span>
+                                        </div>
+                                    </td>
+                                    <td class="px-8 py-5 text-sm font-serif font-bold text-right">$3,400</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!-- Production Queue Widget -->
+                <div class="bg-primary-container text-white p-8 rounded-2xl relative overflow-hidden">
+                    <div class="absolute right-0 top-0 w-1/3 h-full opacity-10 pointer-events-none">
+                        <img alt="Technical drawing" class="w-full h-full object-cover grayscale"
+                            data-alt="Abstract macro shot of a precision mechanical printer component with blue industrial lighting"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBl4V7a1G7l35pJ832cShcC4iQuM_NuFOTu0WTN73r8ycXKk7u4tgbqRIJPNjj1odTYUnHRKE5uerPDwtqij5OEA_NJOsuhKPlQHjBLtZXKa2_JB-iea7zJs_HMPK3VrxdQYkSLyatA8gzhjHGpMoa9Ybx2nF9_6YSUlK4clJpkM-o7e-PwTNkqtaRsjUuPC2tytwFhrXjXAkCs6GvmIZ3SrjBlHFKP8kE82JuM8dXkOxocglNWGmfr3XKs1-f6FCXzhpJmEcM22I" />
+                    </div>
+                    <h3 class="noto-serif text-2xl font-bold mb-6">Live Production Queue</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="bg-white/5 backdrop-blur-md p-4 rounded-xl border border-white/10">
+                            <div class="flex justify-between items-start mb-4">
+                                <div>
+                                    <p
+                                        class="text-[10px] uppercase tracking-widest text-secondary-container font-bold mb-1">
+                                        Press 01 (Heidelberg)</p>
+                                    <p class="text-sm font-serif italic">Wedding Suite: Florence Series</p>
+                                </div>
+                                <span class="material-symbols-outlined text-secondary-container">settings_suggest</span>
+                            </div>
+                            <div class="w-full bg-white/10 h-1.5 rounded-full overflow-hidden">
+                                <div class="bg-secondary h-full w-3/4"></div>
+                            </div>
+                            <div class="flex justify-between mt-2 text-[10px] manrope text-zinc-400">
+                                <span>75% Complete</span>
+                                <span>142/200 units</span>
+                            </div>
+                        </div>
+                        <div class="bg-white/5 backdrop-blur-md p-4 rounded-xl border border-white/10">
+                            <div class="flex justify-between items-start mb-4">
+                                <div>
+                                    <p
+                                        class="text-[10px] uppercase tracking-widest text-secondary-container font-bold mb-1">
+                                        Press 02 (Epson SC)</p>
+                                    <p class="text-sm font-serif italic">Archival Giclée: Ocean Blue</p>
+                                </div>
+                                <span class="material-symbols-outlined text-secondary-container">ink_highlighter</span>
+                            </div>
+                            <div class="w-full bg-white/10 h-1.5 rounded-full overflow-hidden">
+                                <div class="bg-secondary h-full w-1/5"></div>
+                            </div>
+                            <div class="flex justify-between mt-2 text-[10px] manrope text-zinc-400">
+                                <span>20% Complete</span>
+                                <span>2/10 prints</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Inventory & Secondary Stats (5/12) -->
+            <div class="lg:col-span-4 space-y-8">
+                <!-- Inventory Status Card -->
+                <div class="bg-surface-container-low rounded-2xl p-8">
+                    <h3 class="noto-serif text-xl font-bold mb-8">Stock Inventory</h3>
+                    <div class="space-y-8">
+                        <div>
+                            <div class="flex justify-between items-end mb-2">
+                                <span class="manrope text-[10px] uppercase tracking-widest font-bold">Cotton Rag
+                                    (320gsm)</span>
+                                <span class="noto-serif font-bold">42 Rolls</span>
+                            </div>
+                            <div class="w-full bg-surface-container-highest h-1 rounded-full">
+                                <div class="bg-primary h-full w-[85%]"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between items-end mb-2">
+                                <span class="manrope text-[10px] uppercase tracking-widest font-bold text-error">French
+                                    Vellum</span>
+                                <span class="noto-serif font-bold text-error">12 Sheets</span>
+                            </div>
+                            <div class="w-full bg-surface-container-highest h-1 rounded-full">
+                                <div class="bg-error h-full w-[15%]"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between items-end mb-2">
+                                <span class="manrope text-[10px] uppercase tracking-widest font-bold">Japanese
+                                    Washi</span>
+                                <span class="noto-serif font-bold">28 Rolls</span>
+                            </div>
+                            <div class="w-full bg-surface-container-highest h-1 rounded-full">
+                                <div class="bg-primary h-full w-[40%]"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between items-end mb-2">
+                                <span class="manrope text-[10px] uppercase tracking-widest font-bold">Linen
+                                    Canvas</span>
+                                <span class="noto-serif font-bold">64 Rolls</span>
+                            </div>
+                            <div class="w-full bg-surface-container-highest h-1 rounded-full">
+                                <div class="bg-primary h-full w-[95%]"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <button
+                        class="w-full mt-10 border border-secondary text-secondary py-3 px-4 rounded-lg text-[10px] font-sans manrope uppercase tracking-widest hover:bg-secondary hover:text-white transition-all">
+                        Restock Inventory
+                    </button>
+                </div>
+                <!-- Featured Project / Quality Control -->
+                <div class="bg-surface-container rounded-2xl p-2">
+                    <div class="relative h-64 rounded-xl overflow-hidden">
+                        <img alt="Print Detail" class="w-full h-full object-cover"
+                            data-alt="High-detail macro shot of gold foil embossing on premium textured charcoal paper stock"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAEOU9zxFghdjhNThGNGrAd7ZjlU-iB_XS-Ak8aIDddrmiI90glTQaSp8d3NFgnHD4SzNYthYY43NpS2Gm88A0v0FWJKM87eVCBezZYDB44MMH1k6DrdMBozLcstsA9s6g7H94BzZis7xtMP1eSW8_t6mxFQiqeVt2R76COnh9K1xIkCggTcyUUVy2TuemFs7Yf7MEdc5dwlZ_aZeyckP53O0ra5enTsFXmlPVKz48yuec5ho5xIUuUb4K0u6h3k6rAIoE21-1NDbk" />
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex flex-col justify-end p-6">
+                            <span
+                                class="text-[10px] manrope uppercase tracking-widest text-secondary-container font-bold mb-2">Project
+                                Spotlight</span>
+                            <h4 class="text-white noto-serif text-lg leading-tight mb-4">Lumiere Gallery Archival
+                                Collection</h4>
+                            <div class="flex items-center space-x-2 text-white/70 text-xs">
+                                <span class="material-symbols-outlined text-sm">verified</span>
+                                <span>Certified Quality Check Passed</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Notifications Ticker -->
+                <div class="p-6">
+                    <h4 class="manrope text-[10px] uppercase tracking-widest font-bold text-zinc-400 mb-4">Studio Logs
+                    </h4>
+                    <div class="space-y-4">
+                        <div class="flex space-x-3">
+                            <span class="material-symbols-outlined text-secondary text-sm mt-0.5">mail</span>
+                            <div>
+                                <p class="text-xs font-bold">Inquiry: Custom Gold Foil Embossing</p>
+                                <p class="text-[10px] text-zinc-500">2 mins ago • Client: Ritz-Carlton</p>
+                            </div>
+                        </div>
+                        <div class="flex space-x-3">
+                            <span class="material-symbols-outlined text-error text-sm mt-0.5">error</span>
+                            <div>
+                                <p class="text-xs font-bold text-error">Low Ink: Matte Black (C01)</p>
+                                <p class="text-[10px] text-zinc-500">15 mins ago • Machine: HP Indigo</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
