@@ -36,18 +36,8 @@ const Navbar = () => {
             >
               {link.name}
             </Link>
-          ))}
         </div>
-
-        <div className="hidden md:flex items-center space-x-6">
-          <Link to="/contact" className="text-black font-inter font-medium hover:text-secondary transition-colors">
-            Contact Us
-          </Link>
-          <button className="bg-black text-white px-6 py-2.5 rounded-lg font-medium hover:bg-zinc-800 transition-all shadow-sm active:scale-95">
-            Start Order
-          </button>
-        </div>
-
+        
         {/* Mobile Menu Button */}
         <button 
           className="md:hidden p-2 text-black"
@@ -73,14 +63,6 @@ const Navbar = () => {
                 {link.name}
               </Link>
             ))}
-            <div className="flex flex-col gap-4 pt-4">
-              <button className="bg-black text-white py-4 rounded-xl font-bold">
-                Start Order
-              </button>
-              <button className="text-black font-bold py-4">
-                Contact Us
-              </button>
-            </div>
           </div>
         </div>
       )}
