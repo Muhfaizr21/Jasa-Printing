@@ -36,6 +36,7 @@ const Navbar = () => {
             >
               {link.name}
             </Link>
+          ))}
         </div>
         
         {/* Mobile Menu Button */}
