@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Portfolio - The Master Printmaker</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&amp;family=Noto+Serif:ital,wght@0,400;0,700;0,900;1,400;1,700&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-secondary-fixed": "#261900",
+                        "tertiary-container": "#002117",
+                        "secondary": "#775a19",
+                        "tertiary": "#000000",
+                        "on-error-container": "#93000a",
+                        "outline-variant": "#c4c6cc",
+                        "on-tertiary-container": "#528f79",
+                        "outline": "#74777d",
+                        "surface-container-high": "#ebe7e7",
+                        "on-tertiary": "#ffffff",
+                        "tertiary-fixed-dim": "#95d3ba",
+                        "primary-fixed": "#d6e4f9",
+                        "surface-variant": "#e5e2e1",
+                        "primary-fixed-dim": "#bac8dc",
+                        "error": "#ba1a1a",
+                        "inverse-on-surface": "#f3f0ef",
+                        "surface": "#fcf9f8",
+                        "background": "#fcf9f8",
+                        "on-primary-fixed": "#0f1c2c",
+                        "on-primary-container": "#778598",
+                        "on-secondary-container": "#785a1a",
+                        "on-background": "#1c1b1b",
+                        "on-secondary-fixed-variant": "#5d4201",
+                        "primary": "#000000",
+                        "error-container": "#ffdad6",
+                        "surface-dim": "#dcd9d9",
+                        "on-error": "#ffffff",
+                        "secondary-fixed-dim": "#e9c176",
+                        "surface-container-highest": "#e5e2e1",
+                        "inverse-surface": "#313030",
+                        "on-surface-variant": "#44474c",
+                        "primary-container": "#0f1c2c",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-container": "#f0edec",
+                        "on-tertiary-fixed-variant": "#0b513d",
+                        "on-surface": "#1c1b1b",
+                        "tertiary-fixed": "#b0f0d6",
+                        "on-primary": "#ffffff",
+                        "surface-bright": "#fcf9f8",
+                        "inverse-primary": "#bac8dc",
+                        "surface-container-low": "#f6f3f2",
+                        "on-secondary": "#ffffff",
+                        "secondary-fixed": "#ffdea5",
+                        "on-primary-fixed-variant": "#3a4859",
+                        "secondary-container": "#fed488",
+                        "surface-tint": "#525f71",
+                        "on-tertiary-fixed": "#002117"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {},
+                    "fontFamily": {
+                        "headline": ["Noto Serif"],
+                        "body": ["Manrope"],
+                        "label": ["Manrope"]
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+
+        .text-balance {
+            text-wrap: balance;
+        }
+
+        /* No-Line Philosophy Enforcements */
+        * {
+            border-color: transparent !important;
+        }
+
+        .ghost-border {
+            border-color: rgba(196, 198, 204, 0.15) !important;
+        }
+
+        .focus-ghost-border:focus-within {
+            border-color: rgba(119, 90, 25, 0.15) !important;
+        }
+    </style>
+</head>
+
+<body class="bg-surface text-on-surface font-body antialiased selection:bg-secondary/30 selection:text-on-surface">
+    <!-- TopNavBar -->
+    <header
+        class="fixed top-0 w-full z-50 bg-[#fcf9f8]/70 dark:bg-[#0D1B2A]/70 backdrop-blur-xl shadow-[0_8px_32px_0_rgba(28,27,27,0.04)] font-['Noto_Serif'] tracking-tight text-lg">
+        <div class="max-w-7xl mx-auto px-6 md:px-12 flex justify-between items-center h-20">
+            <!-- Brand Logo -->
+            <a class="text-2xl font-black font-['Noto_Serif'] text-slate-950 dark:text-white uppercase tracking-tighter"
+                href="#">
+                The Master Printmaker
+            </a>
+            <!-- Navigation Links (Web) -->
+            <nav class="hidden md:flex items-center space-x-8">
+                <a class="text-slate-500 dark:text-slate-400 font-medium font-['Manrope'] hover:text-[#775a19] transition-all duration-300 ease-out"
+                    href="#">Services</a>
+                <a class="text-slate-950 dark:text-white border-b-2 border-[#775a19] pb-1 hover:text-[#775a19] transition-all duration-300 ease-out"
+                    href="#">Portfolio</a>
+                <a class="text-slate-500 dark:text-slate-400 font-medium font-['Manrope'] hover:text-[#775a19] transition-all duration-300 ease-out"
+                    href="#">Process</a>
+                <a class="text-slate-500 dark:text-slate-400 font-medium font-['Manrope'] hover:text-[#775a19] transition-all duration-300 ease-out"
+                    href="#">About</a>
+            </nav>
+            <!-- Actions (Web) -->
+            <div class="hidden md:flex items-center space-x-4">
+                <a class="font-body text-sm font-semibold text-on-surface hover:text-secondary underline decoration-transparent hover:decoration-secondary underline-offset-4 transition-all"
+                    href="#">
+                    Contact Us
+                </a>
+                <a class="font-body text-sm font-semibold bg-primary text-on-primary px-6 py-2.5 rounded-lg hover:bg-on-surface transition-colors scale-95 active:scale-90 transition-transform"
+                    href="#">
+                    Start Order
+                </a>
+            </div>
+            <!-- Mobile Menu Toggle -->
+            <button aria-label="Open Menu" class="md:hidden text-on-surface hover:text-secondary transition-colors">
+                <span class="material-symbols-outlined text-3xl">menu</span>
+            </button>
+        </div>
+    </header>
+    <main class="pt-32 pb-24">
+        <!-- Hero Section: Editorial Asymmetry -->
+        <section class="max-w-7xl mx-auto px-6 md:px-12 mb-24 grid grid-cols-1 lg:grid-cols-12 gap-12 items-end">
+            <div class="lg:col-span-8">
+                <h1 class="font-headline text-5xl md:text-7xl font-bold tracking-tight text-balance leading-none text-primary mb-6"
+                    style="letter-spacing: -0.02em;">
+                    The Digital Atelier
+                </h1>
+                <p class="font-body text-lg md:text-xl text-on-surface-variant max-w-2xl text-balance leading-relaxed">
+                    A curated selection of our finest impressions. Where meticulous engineering meets the tactile
+                    reality of premium stock.
+                </p>
+            </div>
+            <div class="lg:col-span-4 flex lg:justify-end">
+                <!-- Filters: Paper Selection Chip Style -->
+                <div class="flex flex-wrap gap-3">
+                    <button
+                        class="bg-secondary-container text-secondary font-label text-sm font-bold px-5 py-2.5 rounded-full transition-colors flex items-center gap-2">
+                        <span class="material-symbols-outlined text-[18px]">check</span>
+                        All Works
+                    </button>
+                    <button
+                        class="bg-surface-container-highest text-on-surface-variant hover:bg-surface-container-high font-label text-sm font-medium px-5 py-2.5 rounded-full transition-colors">
+                        Corporate
+                    </button>
+                    <button
+                        class="bg-surface-container-highest text-on-surface-variant hover:bg-surface-container-high font-label text-sm font-medium px-5 py-2.5 rounded-full transition-colors">
+                        Creative
+                    </button>
+                    <button
+                        class="bg-surface-container-highest text-on-surface-variant hover:bg-surface-container-high font-label text-sm font-medium px-5 py-2.5 rounded-full transition-colors">
+                        Large Format
+                    </button>
+                </div>
+            </div>
+        </section>
+        <!-- Gallery: Masonry / Bento Grid approach without lines -->
+        <section class="max-w-[1440px] mx-auto px-6 md:px-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project Item 1 (Large) -->
+                <article
+                    class="group relative md:col-span-2 lg:col-span-2 aspect-[16/9] md:aspect-auto md:h-[600px] overflow-hidden bg-surface-container-low cursor-pointer">
+                    <img alt="Luxury business cards stacked"
+                        class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                        data-alt="Macro shot of thick luxury business cards with gold foil stamping on dark slate surface, dramatic directional lighting"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_VGnPSMUW0AKfyc0Q8CASF9VGYC2ysK7UuaEIS_AooqVocNU54oguUDi5hp6X0vbLDfn74ECmZB2571ffaq79EjWGASsWGsR3iFu-tMD4rZHp3UMU0O-SMssxow2oW1M40RTPpklpoSAZVAndjy249VhEsHW9DlxYtkk-VT-ttuakAyjuulLUIfRN4AoQDQySxlyORWLJnUjjT7oRbGadJ8zjSRMCgmk8PF8JSW4NFvO0Vk0ZpsQFo1UtG8R7DxazqREA6oApJjs" />
+                    <!-- Hover Overlay (Glassmorphism) -->
+                    <div
+                        class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-8">
+                        <div
+                            class="bg-surface-variant/70 backdrop-blur-[20px] p-6 max-w-md transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                            <span
+                                class="font-label text-xs tracking-widest uppercase text-on-surface-variant mb-2 block">Corporate
+                                • Foil Stamping</span>
+                            <h3 class="font-headline text-2xl font-bold text-on-surface mb-2">Aura Capital Identity</h3>
+                            <p class="font-body text-sm text-on-surface-variant">600gsm Cotton Stock with blind deboss
+                                and secondary gold foil edge painting.</p>
+                        </div>
+                    </div>
+                </article>
+                <!-- Project Item 2 -->
+                <article
+                    class="group relative aspect-square md:h-[600px] overflow-hidden bg-surface-container-low cursor-pointer">
+                    <img alt="Abstract colorful poster print"
+                        class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                        data-alt="Vibrant abstract art print rolling off an offset press, rich CMYK colors, shallow depth of field focusing on the ink texture"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuCuPmFeH8DOHkaesYhFWegkcshgixYARa1SE7K6HCWkrakUzDxp-JqrmTw6b6BGBoXP0lBNThjT8ggAuN97xAO5DPMFa1B8zov-uCTxSfnCdlNXTAEmJrTnpxGsKdesVPTnrjH40B1v9b8MRaQH6rXTABxW1lwkxUyuZO6OHFksDdjq117GNpUaTAkxrSh-eOXXpAHL9-gZ9XGSqrQ_VLdm9qvvvUgPAqTXNjPqwHzN7TN8feY7aw8mbXtuxtwIXS90iJgrTejkBgI" />
+                    <div
+                        class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-6">
+                        <div
+                            class="bg-surface-variant/70 backdrop-blur-[20px] p-5 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                            <span
+                                class="font-label text-xs tracking-widest uppercase text-on-surface-variant mb-1 block">Creative
+                                • Offset Lithography</span>
+                            <h3 class="font-headline text-xl font-bold text-on-surface">Genesis Exhibition</h3>
+                        </div>
+                    </div>
+                </article>
+                <!-- Project Item 3 -->
+                <article
+                    class="group relative aspect-square md:h-[400px] overflow-hidden bg-surface-container-low cursor-pointer">
+                    <img alt="Detailed packaging box"
+                        class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                        data-alt="Minimalist cosmetic packaging box with spot UV gloss on matte black background, studio lighting"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5np9ftMZHRQAo3aaPbR1iVftjQu-ldwom4sIOpOTYjcTbAoNk8kfphICHM-QaZlX0jmalEa_LKfOWsmQIERrDi7mLKFdz2KXL_mf9SAL0B_8BCbeWPGchsPwyLSUz8dirz3bCOZFyC6hOppbUvhJt3WPpCsAW96Uv9AR7GMrzfa0VDuDwW6kfYMdt-Vnh9GPdQDeV77RQ--xViCPM558X6tX4bGn8OXkhpXbD-bbdsbfNikjDPJNFdrUsqEH-OHyzaWcgdDDeJb0" />
+                    <div
+                        class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-6">
+                        <div
+                            class="bg-surface-variant/70 backdrop-blur-[20px] p-5 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                            <span
+                                class="font-label text-xs tracking-widest uppercase text-on-surface-variant mb-1 block">Packaging
+                                • Spot UV</span>
+                            <h3 class="font-headline text-xl font-bold text-on-surface">Lumina Botanicals</h3>
+                        </div>
+                    </div>
+                </article>
+                <!-- Project Item 4 (Wide) -->
+                <article
+                    class="group relative md:col-span-2 lg:col-span-2 aspect-[16/9] md:aspect-auto md:h-[400px] overflow-hidden bg-surface-container-low cursor-pointer">
+                    <img alt="Large format gallery print"
+                        class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                        data-alt="Large architectural photography print hanging on a clean gallery wall, crisp details, soft ambient museum lighting"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0hB_SlN4r5s7kgDHnGBvPi2X_oNRZFl6qRXBAkl0BxCDrBamVOvIebA_rdbiTWIOnwbbKyTO5lwmzpExoBB4t06XVUGd8Ic3wVEyOtOktDzH7X9_ngblpzVMmxeZY1clnKqrEYL4z4Kb6YZYnAMm1ZW57T_5bj3uXbKRo7ZM-I9zbKFsSMb-yZa66wIj1RfE61oy-9r-p6GvLJYSMb-OvE81TCk6zBzzh2wCRmVLQoREtpfwNUM2wsywIV_eLBB4__gDFShNZfEc" />
+                    <div
+                        class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-6">
+                        <div
+                            class="bg-surface-variant/70 backdrop-blur-[20px] p-5 max-w-md transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                            <span
+                                class="font-label text-xs tracking-widest uppercase text-on-surface-variant mb-1 block">Large
+                                Format • Giclée</span>
+                            <h3 class="font-headline text-xl font-bold text-on-surface">Urban Structures Series</h3>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="mt-16 text-center">
+                <button
+                    class="font-headline text-sm font-bold text-primary hover:text-secondary underline decoration-transparent hover:decoration-secondary underline-offset-8 transition-all">
+                    Load More Impressions
+                </button>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer
+        class="w-full border-t-0 bg-[#f6f3f2] dark:bg-[#0f1c2c] font-['Manrope'] text-sm leading-relaxed text-slate-900 dark:text-slate-100">
+        <div class="max-w-7xl mx-auto px-6 md:px-12 py-16 grid grid-cols-1 md:grid-cols-4 gap-12">
+            <!-- Brand -->
+            <div class="md:col-span-1">
+                <span class="font-['Noto_Serif'] italic text-xl text-slate-900 dark:text-slate-100 mb-4 block">The
+                    Master Printmaker</span>
+                <p class="text-slate-600 dark:text-slate-400 mt-2">Fine Artistry in Print. Translating digital intent
+                    into tactile reality.</p>
+            </div>
+            <!-- Links Space -->
+            <div class="md:col-span-2 hidden md:block"></div>
+            <!-- Utility Links -->
+            <div class="md:col-span-1 flex flex-col space-y-3">
+                <a class="text-slate-600 dark:text-slate-400 hover:text-[#775a19] hover:underline underline-offset-8 transition-all opacity-80 hover:opacity-100"
+                    href="#">Terms of Service</a>
+                <a class="text-slate-600 dark:text-slate-400 hover:text-[#775a19] hover:underline underline-offset-8 transition-all opacity-80 hover:opacity-100"
+                    href="#">Privacy Policy</a>
+                <a class="text-slate-600 dark:text-slate-400 hover:text-[#775a19] hover:underline underline-offset-8 transition-all opacity-80 hover:opacity-100"
+                    href="#">Accessibility</a>
+                <a class="text-slate-600 dark:text-slate-400 hover:text-[#775a19] hover:underline underline-offset-8 transition-all opacity-80 hover:opacity-100"
+                    href="#">Shipping &amp; Returns</a>
+            </div>
+            <!-- Copyright -->
+            <div class="md:col-span-4 mt-8 pt-8 border-t border-surface-dim/20 text-slate-600 dark:text-slate-400">
+                © 2024 The Master Printmaker. Fine Artistry in Print.
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

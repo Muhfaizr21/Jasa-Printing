@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Services - The Master Printmaker</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&amp;family=Noto+Serif:ital,wght@0,400;0,700;0,900;1,400&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-secondary-fixed": "#261900",
+                        "tertiary-container": "#002117",
+                        "secondary": "#775a19",
+                        "tertiary": "#000000",
+                        "on-error-container": "#93000a",
+                        "outline-variant": "#c4c6cc",
+                        "on-tertiary-container": "#528f79",
+                        "outline": "#74777d",
+                        "surface-container-high": "#ebe7e7",
+                        "on-tertiary": "#ffffff",
+                        "tertiary-fixed-dim": "#95d3ba",
+                        "primary-fixed": "#d6e4f9",
+                        "surface-variant": "#e5e2e1",
+                        "primary-fixed-dim": "#bac8dc",
+                        "error": "#ba1a1a",
+                        "inverse-on-surface": "#f3f0ef",
+                        "surface": "#fcf9f8",
+                        "background": "#fcf9f8",
+                        "on-primary-fixed": "#0f1c2c",
+                        "on-primary-container": "#778598",
+                        "on-secondary-container": "#785a1a",
+                        "on-background": "#1c1b1b",
+                        "on-secondary-fixed-variant": "#5d4201",
+                        "primary": "#000000",
+                        "error-container": "#ffdad6",
+                        "surface-dim": "#dcd9d9",
+                        "on-error": "#ffffff",
+                        "secondary-fixed-dim": "#e9c176",
+                        "surface-container-highest": "#e5e2e1",
+                        "inverse-surface": "#313030",
+                        "on-surface-variant": "#44474c",
+                        "primary-container": "#0f1c2c",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-container": "#f0edec",
+                        "on-tertiary-fixed-variant": "#0b513d",
+                        "on-surface": "#1c1b1b",
+                        "tertiary-fixed": "#b0f0d6",
+                        "on-primary": "#ffffff",
+                        "surface-bright": "#fcf9f8",
+                        "inverse-primary": "#bac8dc",
+                        "surface-container-low": "#f6f3f2",
+                        "on-secondary": "#ffffff",
+                        "secondary-fixed": "#ffdea5",
+                        "on-primary-fixed-variant": "#3a4859",
+                        "secondary-container": "#fed488",
+                        "surface-tint": "#525f71",
+                        "on-tertiary-fixed": "#002117"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {},
+                    "fontFamily": {
+                        "headline": [
+                            "Noto Serif"
+                        ],
+                        "body": [
+                            "Manrope"
+                        ],
+                        "label": [
+                            "Manrope"
+                        ]
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+
+<body class="bg-surface text-on-surface font-body antialiased min-h-screen flex flex-col pt-20">
+    <!-- TopNavBar -->
+    <header
+        class="bg-[#fcf9f8]/70 dark:bg-[#0D1B2A]/70 backdrop-blur-xl text-slate-950 dark:text-slate-50 font-['Noto_Serif'] tracking-tight text-lg selection:bg-secondary/30 fixed top-0 w-full z-50 shadow-[0_8px_32px_0_rgba(28,27,27,0.04)]">
+        <div class="max-w-7xl mx-auto px-6 md:px-12 flex justify-between items-center h-20">
+            <div
+                class="text-2xl font-black font-['Noto_Serif'] text-slate-950 dark:text-white uppercase tracking-tighter scale-95 active:scale-90 transition-transform cursor-pointer">
+                The Master Printmaker
+            </div>
+            <!-- Desktop Nav -->
+            <nav class="hidden md:flex space-x-8 items-center">
+                <a class="text-slate-950 dark:text-white border-b-2 border-[#775a19] pb-1 hover:text-[#775a19] transition-all duration-300 ease-out scale-95 active:scale-90 transition-transform"
+                    href="#">Services</a>
+                <a class="text-slate-500 dark:text-slate-400 font-medium font-['Manrope'] hover:text-[#775a19] transition-all duration-300 ease-out scale-95 active:scale-90 transition-transform"
+                    href="#">Portfolio</a>
+                <a class="text-slate-500 dark:text-slate-400 font-medium font-['Manrope'] hover:text-[#775a19] transition-all duration-300 ease-out scale-95 active:scale-90 transition-transform"
+                    href="#">Process</a>
+                <a class="text-slate-500 dark:text-slate-400 font-medium font-['Manrope'] hover:text-[#775a19] transition-all duration-300 ease-out scale-95 active:scale-90 transition-transform"
+                    href="#">About</a>
+            </nav>
+            <!-- Actions -->
+            <div class="hidden md:flex items-center space-x-4">
+                <button
+                    class="font-body text-sm font-semibold underline underline-offset-4 hover:text-secondary transition-colors scale-95 active:scale-90 transition-transform">Contact
+                    Us</button>
+                <button
+                    class="bg-primary text-on-primary font-body font-semibold py-2 px-5 rounded-md hover:bg-primary-container transition-colors scale-95 active:scale-90 transition-transform">Start
+                    Order</button>
+            </div>
+            <!-- Mobile Menu Toggle (Visual Only) -->
+            <button class="md:hidden text-on-surface">
+                <span class="material-symbols-outlined text-2xl">menu</span>
+            </button>
+        </div>
+    </header>
+    <!-- Main Content Canvas -->
+    <main class="flex-grow">
+        <!-- Hero Section -->
+        <section class="py-24 px-6 md:px-12 max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-7 space-y-8">
+                    <h1
+                        class="font-headline text-5xl md:text-6xl font-black tracking-[-0.02em] leading-tight text-on-surface">
+                        Precision in Every <br /> Drop of Ink.
+                    </h1>
+                    <p class="font-body text-lg md:text-xl text-on-surface-variant max-w-2xl leading-relaxed">
+                        From the crisp authority of corporate stationery to the tactile warmth of custom wedding suites,
+                        we bridge digital precision with artisanal quality.
+                    </p>
+                </div>
+                <div
+                    class="lg:col-span-5 relative h-[400px] w-full rounded-xl overflow-hidden bg-surface-container shadow-[0_24px_32px_-12px_rgba(28,27,27,0.04)]">
+                    <img alt="Printing press detail" class="absolute inset-0 w-full h-full object-cover"
+                        data-alt="Close up of a vintage letterpress machine with black ink, soft studio lighting, shallow depth of field highlighting the metallic gears"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuADgnfs-XJtfoCE0_9YgvUUpFKBSwhpuXNFeW_aDnI2GZ7fcfqnRZ56ATfQJfcenrnBfDejP9Rpv-IeedLOngzQgGh43jwi21Q5tGbjFt2u5r1lDYBA4USQlyfwFXfopXmBdmuhefNGeogUxOFmpA-NJxwJVViCpDHvF-lZsaYw2XRv6FJVHLBLsaIp0NZAtTT7HE18H5pkTqDzbfLQuf7Oyh_-18tXK0JmnMBXqSJECKnVsS6cf86d11qaUi7eT3bXIgwNHoEKGrk" />
+                </div>
+            </div>
+        </section>
+        <!-- Services Section -->
+        <section class="py-24 bg-surface-container px-6 md:px-12">
+            <div class="max-w-7xl mx-auto">
+                <div class="mb-16">
+                    <h2 class="font-headline text-4xl font-bold tracking-tight text-on-surface mb-4">Our Disciplines
+                    </h2>
+                    <p class="font-body text-on-surface-variant max-w-xl">Explore our curated selection of printing
+                        services, tailored for professionals who demand excellence.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Corporate Card -->
+                    <div
+                        class="bg-surface-container-lowest rounded-xl p-8 hover:bg-surface-container-high transition-colors duration-300 group flex flex-col h-full shadow-[0_8px_24px_rgba(28,27,27,0.02)] relative overflow-hidden">
+                        <div class="h-48 -mx-8 -mt-8 mb-8 overflow-hidden">
+                            <img alt="Corporate business cards"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                                data-alt="Stack of thick, premium minimalist business cards on a dark charcoal textured background, sharp focus, dramatic side lighting"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDi9KtoKK8GRMJgLy6MK6-ATOd9mtlwPSfWmenWhNWOYDlByWjfotNKd-aO0EJRJYpNmbHr3Fpnrpv5wLXAcBdrhV44OWQli06gnsRuMPNZ4R9gPpDasoJAjjXppfy-52f_e8yS3tG_0339WDWu1dKDvDUqExYBKmWDwuwE58N6f1nSKToPbr3HYha0kV_G6-rsLh5CETZKsj2ZAMH-ItmqeQJBbH66WMwryNfgz61dX5-pctWCf7poQWzEKQvQgRoGFX1Vu3-DlR8" />
+                        </div>
+                        <div class="flex-grow space-y-4 relative z-10">
+                            <span
+                                class="material-symbols-outlined text-secondary text-3xl mb-2 block">business_center</span>
+                            <h3 class="font-headline text-2xl font-bold text-on-surface">Corporate</h3>
+                            <p class="font-body text-on-surface-variant text-sm leading-relaxed">
+                                Establish authority with crisp, heavy-stock business cards, authoritative letterheads,
+                                and pristine corporate brochures.
+                            </p>
+                            <ul class="font-body text-sm text-on-surface-variant space-y-2 mt-4 pb-12">
+                                <li class="flex items-center gap-2"><span
+                                        class="material-symbols-outlined text-sm text-secondary">check</span> Business
+                                    Cards</li>
+                                <li class="flex items-center gap-2"><span
+                                        class="material-symbols-outlined text-sm text-secondary">check</span>
+                                    Letterheads &amp; Envelopes</li>
+                                <li class="flex items-center gap-2"><span
+                                        class="material-symbols-outlined text-sm text-secondary">check</span> Corporate
+                                    Brochures</li>
+                            </ul>
+                        </div>
+                        <div class="mt-auto pt-6 bg-surface-container-lowest absolute bottom-8 left-8 right-8">
+                            <p class="font-headline text-lg font-bold text-primary">From <span
+                                    class="font-['Noto_Serif'] text-secondary">$150</span></p>
+                        </div>
+                    </div>
+                    <!-- Marketing Card -->
+                    <div
+                        class="bg-surface-container-lowest rounded-xl p-8 hover:bg-surface-container-high transition-colors duration-300 group flex flex-col h-full shadow-[0_8px_24px_rgba(28,27,27,0.02)] relative overflow-hidden">
+                        <div class="h-48 -mx-8 -mt-8 mb-8 overflow-hidden">
+                            <img alt="Marketing posters"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                                data-alt="Vibrant, high-contrast promotional posters hanging on a clean white wall, modern design aesthetic, bright even lighting"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCGBBFmwDPpciziQeyS9WFI6GmtepvjN5pmYC0RBEKEjeD5Gck0SV8mlKcEzPdJIJBXo0cCRpQKPzkyWQVyPp0ghefFD8VdggjEuqV_EjkC4zvshDlAI3x31HdCu8d5fWntfVrZJ_VnWjcmc7MKLCxDPXF42_EahqxiQ6iQvhYroJtnSfdI6ToWBn_uOclELdCiO-D4nr-poDiXt4Jv-38NyC4KHsauEd5VHiOPEFl7qBDzlrpGrdgDSQtAshQ6geRZMGNEi6YVcx8" />
+                        </div>
+                        <div class="flex-grow space-y-4 relative z-10">
+                            <span class="material-symbols-outlined text-secondary text-3xl mb-2 block">campaign</span>
+                            <h3 class="font-headline text-2xl font-bold text-on-surface">Marketing</h3>
+                            <p class="font-body text-on-surface-variant text-sm leading-relaxed">
+                                Demand attention with vibrant, large-format posters, durable banners, and compelling
+                                direct mail campaigns.
+                            </p>
+                            <ul class="font-body text-sm text-on-surface-variant space-y-2 mt-4 pb-12">
+                                <li class="flex items-center gap-2"><span
+                                        class="material-symbols-outlined text-sm text-secondary">check</span> Large
+                                    Format Posters</li>
+                                <li class="flex items-center gap-2"><span
+                                        class="material-symbols-outlined text-sm text-secondary">check</span> Event
+                                    Banners</li>
+                                <li class="flex items-center gap-2"><span
+                                        class="material-symbols-outlined text-sm text-secondary">check</span> Direct
+                                    Mailers</li>
+                            </ul>
+                        </div>
+                        <div class="mt-auto pt-6 bg-surface-container-lowest absolute bottom-8 left-8 right-8">
+                            <p class="font-headline text-lg font-bold text-primary">From <span
+                                    class="font-['Noto_Serif'] text-secondary">$85</span></p>
+                        </div>
+                    </div>
+                    <!-- Custom Card -->
+                    <div
+                        class="bg-surface-container-lowest rounded-xl p-8 hover:bg-surface-container-high transition-colors duration-300 group flex flex-col h-full shadow-[0_8px_24px_rgba(28,27,27,0.02)] relative overflow-hidden">
+                        <div class="h-48 -mx-8 -mt-8 mb-8 overflow-hidden">
+                            <img alt="Custom wedding invitations"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                                data-alt="Elegant wedding invitation suite with gold foil stamping on thick cotton paper, resting on a marble surface with soft floral shadows"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuALZRj3s0_GIY_1p46SvjQJlsygnmlM2h29qVb-3QyNh3C34FCsWCQ5HmlQXBUO_WBaRnKmKyqGSCDdq8v_c8TAZ1BFtWtXUYmT2_zErXesxeNPgYbsr28mKRTCwvNf8sGSO4SQAbdLlkgvwg_jFybsQtdLbV6OphMh7oin_uoHameyza5lq43wAf2tsj6nhm_4jSum4fij9HAWhHK2W_emsZXq8r9A7a0sPc-GVQ5t-1SVQlDQX23Kr7qQ2hsshdr9sc5ATiSeBtU" />
+                        </div>
+                        <div class="flex-grow space-y-4 relative z-10">
+                            <span
+                                class="material-symbols-outlined text-secondary text-3xl mb-2 block">auto_awesome</span>
+                            <h3 class="font-headline text-2xl font-bold text-on-surface">Custom</h3>
+                            <p class="font-body text-on-surface-variant text-sm leading-relaxed">
+                                For the unforgettable moments. Bespoke wedding invitations, artisanal packaging, and
+                                foil-stamped luxury goods.
+                            </p>
+                            <ul class="font-body text-sm text-on-surface-variant space-y-2 mt-4 pb-12">
+                                <li class="flex items-center gap-2"><span
+                                        class="material-symbols-outlined text-sm text-secondary">check</span> Wedding
+                                    Invitations</li>
+                                <li class="flex items-center gap-2"><span
+                                        class="material-symbols-outlined text-sm text-secondary">check</span> Luxury
+                                    Packaging</li>
+                                <li class="flex items-center gap-2"><span
+                                        class="material-symbols-outlined text-sm text-secondary">check</span> Foil &amp;
+                                    Embossing</li>
+                            </ul>
+                        </div>
+                        <div class="mt-auto pt-6 bg-surface-container-lowest absolute bottom-8 left-8 right-8">
+                            <p class="font-headline text-lg font-bold text-primary">From <span
+                                    class="font-['Noto_Serif'] text-secondary">$300</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer
+        class="bg-[#f6f3f2] dark:bg-[#0f1c2c] text-slate-900 dark:text-slate-100 font-['Manrope'] text-sm leading-relaxed w-full border-t-0">
+        <div class="max-w-7xl mx-auto px-6 md:px-12 py-16 grid grid-cols-1 md:grid-cols-4 gap-12">
+            <div class="md:col-span-1 space-y-4">
+                <div class="font-['Noto_Serif'] italic text-xl text-slate-900 dark:text-slate-100">
+                    The Master Printmaker
+                </div>
+                <p class="text-slate-600 dark:text-slate-400 max-w-xs">
+                    Bridging digital precision with the tactile, high-end world of luxury printing.
+                </p>
+            </div>
+            <div class="space-y-4">
+                <h4 class="font-headline font-bold text-base">Services</h4>
+                <ul class="space-y-2">
+                    <li><a class="text-slate-600 dark:text-slate-400 hover:text-[#775a19] hover:underline underline-offset-8 transition-all opacity-80 hover:opacity-100"
+                            href="#">Corporate</a></li>
+                    <li><a class="text-slate-600 dark:text-slate-400 hover:text-[#775a19] hover:underline underline-offset-8 transition-all opacity-80 hover:opacity-100"
+                            href="#">Marketing</a></li>
+                    <li><a class="text-slate-600 dark:text-slate-400 hover:text-[#775a19] hover:underline underline-offset-8 transition-all opacity-80 hover:opacity-100"
+                            href="#">Custom</a></li>
+                </ul>
+            </div>
+            <div class="space-y-4">
+                <h4 class="font-headline font-bold text-base">Legal</h4>
+                <ul class="space-y-2">
+                    <li><a class="text-slate-600 dark:text-slate-400 hover:text-[#775a19] hover:underline underline-offset-8 transition-all opacity-80 hover:opacity-100"
+                            href="#">Terms of Service</a></li>
+                    <li><a class="text-slate-600 dark:text-slate-400 hover:text-[#775a19] hover:underline underline-offset-8 transition-all opacity-80 hover:opacity-100"
+                            href="#">Privacy Policy</a></li>
+                    <li><a class="text-slate-600 dark:text-slate-400 hover:text-[#775a19] hover:underline underline-offset-8 transition-all opacity-80 hover:opacity-100"
+                            href="#">Accessibility</a></li>
+                    <li><a class="text-slate-600 dark:text-slate-400 hover:text-[#775a19] hover:underline underline-offset-8 transition-all opacity-80 hover:opacity-100"
+                            href="#">Shipping &amp; Returns</a></li>
+                </ul>
+            </div>
+            <div class="space-y-4">
+                <h4 class="font-headline font-bold text-base">Contact</h4>
+                <ul class="space-y-2 text-slate-600 dark:text-slate-400">
+                    <li>hello@masterprintmaker.com</li>
+                    <li>+1 (555) 123-4567</li>
+                    <li>123 Artisan Way, NY 10012</li>
+                </ul>
+            </div>
+        </div>
+        <div
+            class="max-w-7xl mx-auto px-6 md:px-12 py-6 border-t border-outline-variant/10 text-center md:text-left text-slate-500">
+            © 2024 The Master Printmaker. Fine Artistry in Print.
+        </div>
+    </footer>
+</body>
+
+</html>

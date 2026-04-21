@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Heritage &amp; Artistry - The Master Printmaker</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&amp;family=Manrope:wght@300;400;500;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-tertiary": "#ffffff",
+                        "on-surface": "#1c1b1b",
+                        "on-tertiary-container": "#528f79",
+                        "surface-dim": "#dcd9d9",
+                        "surface-tint": "#525f71",
+                        "on-tertiary-fixed-variant": "#0b513d",
+                        "error": "#ba1a1a",
+                        "secondary": "#775a19",
+                        "primary-container": "#0f1c2c",
+                        "on-secondary-fixed-variant": "#5d4201",
+                        "tertiary-container": "#002117",
+                        "secondary-fixed-dim": "#e9c176",
+                        "error-container": "#ffdad6",
+                        "outline": "#74777d",
+                        "surface-container": "#f0edec",
+                        "on-secondary-container": "#785a1a",
+                        "secondary-fixed": "#ffdea5",
+                        "on-error": "#ffffff",
+                        "inverse-primary": "#bac8dc",
+                        "tertiary-fixed-dim": "#95d3ba",
+                        "background": "#fcf9f8",
+                        "on-surface-variant": "#44474c",
+                        "outline-variant": "#c4c6cc",
+                        "inverse-on-surface": "#f3f0ef",
+                        "on-error-container": "#93000a",
+                        "on-primary-fixed": "#0f1c2c",
+                        "tertiary": "#000000",
+                        "surface-variant": "#e5e2e1",
+                        "surface-container-highest": "#e5e2e1",
+                        "on-primary": "#ffffff",
+                        "surface-container-lowest": "#ffffff",
+                        "secondary-container": "#fed488",
+                        "inverse-surface": "#313030",
+                        "on-secondary": "#ffffff",
+                        "on-background": "#1c1b1b",
+                        "primary-fixed": "#d6e4f9",
+                        "surface-bright": "#fcf9f8",
+                        "surface-container-low": "#f6f3f2",
+                        "primary-fixed-dim": "#bac8dc",
+                        "on-primary-container": "#778598",
+                        "surface": "#fcf9f8",
+                        "primary": "#000000",
+                        "on-secondary-fixed": "#261900",
+                        "on-primary-fixed-variant": "#3a4859",
+                        "tertiary-fixed": "#b0f0d6",
+                        "surface-container-high": "#ebe7e7",
+                        "on-tertiary-fixed": "#002117"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Noto Serif"],
+                        "body": ["Manrope"],
+                        "label": ["Manrope"],
+                        "notoSerif": ["Noto Serif"],
+                        "manrope": ["Manrope"]
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+
+        .editorial-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+        }
+    </style>
+</head>
+
+<body class="bg-background text-on-surface font-body selection:bg-secondary-container selection:text-secondary">
+    <!-- Top Navigation -->
+    <nav class="fixed top-0 w-full z-50 bg-white/70 dark:bg-slate-950/70 backdrop-blur-md">
+        <div class="flex justify-between items-center px-8 py-6 w-full max-w-screen-2xl mx-auto">
+            <div class="text-xl font-notoSerif font-bold text-black dark:text-white tracking-tighter">
+                The Master Printmaker
+            </div>
+            <div class="hidden md:flex items-center gap-8">
+                <a class="text-black dark:text-white border-b-2 border-amber-700 pb-1 font-notoSerif tracking-tight font-bold"
+                    href="#">Atelier</a>
+                <a class="text-slate-500 dark:text-slate-400 font-manrope hover:text-amber-700 dark:hover:text-amber-500 transition-colors"
+                    href="#">Services</a>
+                <a class="text-slate-500 dark:text-slate-400 font-manrope hover:text-amber-700 dark:hover:text-amber-500 transition-colors"
+                    href="#">Heritage</a>
+                <a class="text-slate-500 dark:text-slate-400 font-manrope hover:text-amber-700 dark:hover:text-amber-500 transition-colors"
+                    href="#">Contact</a>
+            </div>
+            <button
+                class="bg-primary text-on-primary px-6 py-2 rounded-lg font-medium hover:bg-secondary transition-all duration-300">
+                Start a Project
+            </button>
+        </div>
+    </nav>
+    <main class="pt-24">
+        <!-- Hero Section -->
+        <section class="relative min-h-[819px] flex items-center overflow-hidden">
+            <div class="absolute inset-0 z-0">
+                <img class="w-full h-full object-cover grayscale opacity-20"
+                    data-alt="Close-up of a vintage heavy-duty printing press with dark metallic textures and soft dramatic lighting in a traditional atelier"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBWcbalPaj4yzCjfXf7gcYSuPnknl0gWHbWR9bxqx8_Jc4buFN80XzT3d-gSfF8KqDCZRq9xt2eF5FCj-pwioL2RtjkcPFCHfm-AzT3ZqZXcO5lCH03_ct1ZSaTfuLRUBVnSGfgPs6Gn8MOCEChgmF9OF52fJhN8G_gZUSCTANYEPtljCWDutT39qSSO6vgLGkXBV_9pB5NCMc1zEtef7_s0OOk5OOxlCcwAH47lRAm_E9092ek5F2oR8ik8vf6sBIPOuushqaE9qg" />
+                <div class="absolute inset-0 bg-gradient-to-r from-background via-background/80 to-transparent"></div>
+            </div>
+            <div class="container mx-auto px-8 relative z-10 editorial-grid">
+                <div class="col-span-12 md:col-span-8">
+                    <span class="font-manrope uppercase tracking-[0.3em] text-secondary text-sm mb-6 block">Established
+                        1894</span>
+                    <h1
+                        class="font-headline text-6xl md:text-8xl font-bold text-on-background tracking-tighter leading-none mb-8">
+                        Heritage in Every <br /><span class="italic text-primary-container">Impression</span>
+                    </h1>
+                    <p class="font-body text-xl text-on-surface-variant max-w-xl leading-relaxed">
+                        Where the weight of tradition meets the precision of the digital frontier. We are the architects
+                        of physical permanence in an ephemeral age.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- Our Story Section -->
+        <section class="py-24 bg-surface-container-low">
+            <div class="container mx-auto px-8 editorial-grid gap-y-12">
+                <div class="col-span-12 md:col-span-5 flex flex-col justify-center">
+                    <h2 class="font-headline text-4xl font-bold mb-8">The Alchemy of Ink</h2>
+                    <div class="space-y-6 font-body text-lg text-on-surface-variant leading-relaxed">
+                        <p>
+                            For over a century, our family has practiced the sacred art of the impression. What began in
+                            a small cobblestone workshop in London has evolved into a global standard for high-end
+                            digital and traditional printing.
+                        </p>
+                        <p>
+                            We didn't abandon our craftsmanship for technology; we used technology to amplify it. Every
+                            digital file is treated with the same reverence as a hand-set lead type, ensuring that the
+                            soul of the artisan remains present in every fiber.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-span-12 md:col-start-7 md:col-span-6">
+                    <div class="relative aspect-[4/5] overflow-hidden">
+                        <img class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
+                            data-alt="Artisanal hands carefully inspecting a high-quality textured paper print under a warm studio lamp with dust motes in the air"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCS-sUbjlgY2sVy9yz64O8aSbF1XxgQETDsSDWJNydBYXEzua9jOklvwQsqvAUIiGqrFk3H9cv97wQSmXTABsUsVLiqVHxsecq62vU2pG8Yj_wkM35HeYTS8OHzbbKj5pNOKofsZ0zYbWh7OtDeAQQ5KMDgygjxGdUqUMWm-6dlyeopP9oN9GEzpPpWWJjACgEbrxtTIbkvRdA_OVZPC6jsiTO-qIgMeoxwI3WC1nJT5b-tImVa-jn-bFvI9mgGpVvlgBW7_iesGhM" />
+                        <div class="absolute bottom-8 -left-8 bg-primary text-on-primary p-8 max-w-xs hidden md:block">
+                            <p class="font-headline italic text-2xl">"Precision is the only language we speak fluently."
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Our Values: Bento Grid -->
+        <section class="py-32 bg-background">
+            <div class="container mx-auto px-8">
+                <div class="mb-16">
+                    <h2 class="font-headline text-5xl font-bold tracking-tight">Core Philosophies</h2>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <!-- Value 1 -->
+                    <div
+                        class="bg-surface-container p-12 flex flex-col justify-between min-h-[400px] hover:bg-surface-container-high transition-colors">
+                        <span class="material-symbols-outlined text-4xl text-secondary"
+                            data-icon="architecture">architecture</span>
+                        <div>
+                            <h3 class="font-headline text-2xl font-bold mb-4">Uncompromising Precision</h3>
+                            <p class="font-body text-on-surface-variant">We measure in microns. Our equipment is
+                                calibrated daily to ensure that color reproduction remains faithful to the artist's
+                                original intent.</p>
+                        </div>
+                    </div>
+                    <!-- Value 2 -->
+                    <div class="bg-primary-container text-on-primary p-12 flex flex-col justify-between min-h-[400px]">
+                        <span class="material-symbols-outlined text-4xl text-secondary-fixed" data-icon="eco"
+                            style="font-variation-settings: 'FILL' 1;">eco</span>
+                        <div>
+                            <h3 class="font-headline text-2xl font-bold mb-4">Ethical Stewardship</h3>
+                            <p class="text-on-primary-container">Luxury shouldn't cost the earth. We use exclusively
+                                FSC-certified papers, vegetable-based inks, and a closed-loop water filtration system.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Value 3 -->
+                    <div
+                        class="bg-surface-container-low p-12 flex flex-col justify-between min-h-[400px] hover:bg-surface-container-high transition-colors">
+                        <span class="material-symbols-outlined text-4xl text-secondary"
+                            data-icon="history_edu">history_edu</span>
+                        <div>
+                            <h3 class="font-headline text-2xl font-bold mb-4">Legacy of Quality</h3>
+                            <p class="font-body text-on-surface-variant">Every project that leaves our atelier is a
+                                representative of our name. We do not ship "good enough"—we only ship perfection.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Meet the Artisans -->
+        <section class="py-24 bg-surface-container-lowest">
+            <div class="container mx-auto px-8">
+                <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+                    <h2 class="font-headline text-5xl font-bold max-w-md">The Minds Behind the Machines</h2>
+                    <p class="font-body text-on-surface-variant max-w-sm">A collective of master printers, color
+                        theorists, and structural engineers dedicated to your vision.</p>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12">
+                    <!-- Artisan 1 -->
+                    <div class="space-y-4">
+                        <div class="aspect-[3/4] bg-surface-container overflow-hidden">
+                            <img class="w-full h-full object-cover grayscale hover:scale-105 transition-transform duration-500"
+                                data-alt="Professional portrait of a senior master printer with grey beard, wearing a charcoal apron in a workshop setting"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuA7MiZM3o80s-93JzI-SgRBUObX-Yxt-d-rfpd6sAkBSo7unRjV3tsg3TFf1Ih6bGlH_xpWI2u77CJ7CAq4scwJvf3USd2y1KZA4fQK3aozvE95AlhGOddCsJiTVLHxivBqqR6_bJFmKzE4_v2bDNc9vg6oImrXrF-4rZLIOkruZBaTLTbIcMkfkoRHgAzxCdIHVoFnZTcxwrLhvoaeX1TaBLjuBsrSMdlRL4zlqv0F2U6YLYt4uxvVywtyO4eGB9oCLJ2zYlPFSeI" />
+                        </div>
+                        <div>
+                            <h4 class="font-headline text-xl font-bold">Julian Vane</h4>
+                            <p class="font-manrope text-sm uppercase tracking-widest text-secondary">Chief Master
+                                Printer</p>
+                        </div>
+                    </div>
+                    <!-- Artisan 2 -->
+                    <div class="space-y-4 md:mt-12">
+                        <div class="aspect-[3/4] bg-surface-container overflow-hidden">
+                            <img class="w-full h-full object-cover grayscale hover:scale-105 transition-transform duration-500"
+                                data-alt="Professional portrait of a young woman color theorist with glasses, looking thoughtfully at a camera in a brightly lit studio"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBogPU0jgBfXEifQMnRmH542NCWALIyuTFs480i8zjaFlgl2x8Qb600tm3X-kyq4B-JUFr04GzM62IXrQzHywh_ChMfUu7bilU7J0kIqAxQrHBYBt_HwrKoXP8xv9kpBQ3GgDRotnno1IXc7E-mlb2jDGmpcEqXsp6z22i56cgpGP2q8oceIxqg2F9VxW4Ltze6JUXLaxiSaLHgGUU0w5Sy5j93UOZECPtT7VF5cHLTHBS9fzSwlAeputM_BQ4uy6Fbvpmfx0CGySM" />
+                        </div>
+                        <div>
+                            <h4 class="font-headline text-xl font-bold">Elena Rossi</h4>
+                            <p class="font-manrope text-sm uppercase tracking-widest text-secondary">Head of Color
+                                Science</p>
+                        </div>
+                    </div>
+                    <!-- Artisan 3 -->
+                    <div class="space-y-4">
+                        <div class="aspect-[3/4] bg-surface-container overflow-hidden">
+                            <img class="w-full h-full object-cover grayscale hover:scale-105 transition-transform duration-500"
+                                data-alt="Middle-aged man with focused expression, artisan structural engineer for high-end packaging design"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuB6sGPPSXhQMUj1B73jV936zanmzP7_xjLglDQVjvqGS--J2M2j3LRHxlJyJ-XjdnPoVbFaMGpXy1oOxe1YRs3exdUYvcdGXPCIKj1-1hlm-8D7TUmOIQi0CfVm404-kJSn4PQFuFFacjvMhhPIuhnW-iJ1leg-T-tMIjhGpkDS2oNZTDYP-4v95oChyoBtZMA7Ns83WK8EZ3ojruoXbPKTRO3bLsWb_IL3EyBt3_YQMaUJO3h2fCoK2hX_W_4RpL-wlAMxhZX9icw" />
+                        </div>
+                        <div>
+                            <h4 class="font-headline text-xl font-bold">Marcus Thorne</h4>
+                            <p class="font-manrope text-sm uppercase tracking-widest text-secondary">Structural Engineer
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Artisan 4 -->
+                    <div class="space-y-4 md:mt-12">
+                        <div class="aspect-[3/4] bg-surface-container overflow-hidden">
+                            <img class="w-full h-full object-cover grayscale hover:scale-105 transition-transform duration-500"
+                                data-alt="Professional black woman designer with a confident smile, standing in a modern print atelier"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAn_Tq9Z3rmtY6suq4AeH_x42oTXXJXVCV-DYoO3ysNP-M8mCfiCpb94qvi0RZgZ3ztlShUc3pi8Qemdyh-vwi_lygoQzpjtFDBddEKNIhlkUcuHUsF6H7alrTn4JDdsXAD4LEcqI8pcYn4zzVt7H68SrGNvDKzxS9eDOohOTpGIuuGBjZoHIC6h7OBrmeS4dpDzE0uJTwpYaqc23O2-BkUHbo2HKiB6R5ZeIr9ACbcEM8f6IR6lmPLQmKR9er9MxRtVb9MoN-nLXs" />
+                        </div>
+                        <div>
+                            <h4 class="font-headline text-xl font-bold">Sarah Jenkins</h4>
+                            <p class="font-manrope text-sm uppercase tracking-widest text-secondary">Atelier Director
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- The Atelier Gallery -->
+        <section class="py-24 bg-surface">
+            <div class="container mx-auto px-8">
+                <div class="mb-12 flex justify-between items-center">
+                    <h2 class="font-headline text-4xl font-bold">Inside the Atelier</h2>
+                    <span class="font-manrope text-sm tracking-widest text-outline">LONDON — NEW YORK — TOKYO</span>
+                </div>
+                <div class="grid grid-cols-12 grid-rows-2 gap-4 h-[800px]">
+                    <div class="col-span-8 row-span-2 overflow-hidden">
+                        <img class="w-full h-full object-cover"
+                            data-alt="Wide shot of a clean modern industrial print studio with large format printers and architectural lighting"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAXL4LPVqXzN25usVun6yj7Ad0BApH7iiDo8P2R1HHyDUGLUcLdZKz9UqspeF3aJxNb-wtlqMi3XVWeEmppLSNO7toGymZ7trTnUIKRHaYNIkvSob1P4D7_4D87vlF-XBcKV3UA0V2h748GfDwascgA9SMsAhb5qcoiLxzhzz-fzXHWnMKRXtwamNUnKyb6PbXRqYSybQhM2ctDKG9t9ysC8FovfL9T_NHsRi2OHdkzwopczvyFHL3RNsmfvMZXxqVK-HeR5pLIRT8" />
+                    </div>
+                    <div class="col-span-4 row-span-1 overflow-hidden">
+                        <img class="w-full h-full object-cover"
+                            data-alt="Macro detail of paper textures and swatches neatly arranged on a wooden work surface"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDCHzp2nca4aMYkfLT_7ijpc1kPgwo0I1Q0faO35G1ByY2eDn4ztsMKwT9WANrfrewmcSQHnRDIMF1xO6cOLqaVQEUJWfD0cDGdk2WgvUnty7sF0tUhMxrXD2RYqBA1m5gzp8hayV6pO5qV3zPHYhE7XV3rGT0GY7R6JQPc9x5UYB9KEoz_qA-uGk0bB1HAas6Iyf185jdadzcIkWDDUBJFpxZKk5tnRPainJiCdqUennj-t3vwjjAd_4c5xNssxIjTVbMGV1S33D8" />
+                    </div>
+                    <div class="col-span-4 row-span-1 overflow-hidden">
+                        <img class="w-full h-full object-cover"
+                            data-alt="Stack of high-end business cards with gold foil edges resting on a dark velvet surface"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCCZ7FINJg0G3LaYS8ZNXtHf5TAj1xObRiyB2EB2tnnN7TFnkEoi_FYynLo0wrL6GPrmvKVdYrBOi2yxK-CZJM4HeRT34bwpV332OuJucsquwwgIpxn0L7bE-qj7V7pBzSe4rtemk9oScBrdb8aA4QHPCKUmSrsH9MTh_rGcRhsbmFafH8tuADKmmoJO4NU2KjTfiOiGZl-A9DfkQTHf5hwfPTni9A6BzacMIcPVB8nE3SuD7AF_QQsH4KB-xChypNN3_V0y5k1bQU" />
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- CTA Section -->
+        <section class="py-32 relative overflow-hidden">
+            <div class="absolute inset-0 bg-primary-container"></div>
+            <div class="container mx-auto px-8 relative z-10 text-center">
+                <h2
+                    class="font-headline text-5xl md:text-7xl font-bold text-on-primary mb-12 tracking-tighter leading-tight">
+                    Start Your Next <br /><span class="text-secondary-fixed">Masterpiece</span>
+                </h2>
+                <div class="flex flex-col md:flex-row justify-center gap-6">
+                    <button
+                        class="bg-secondary text-on-secondary px-12 py-5 rounded-lg text-lg font-bold hover:scale-105 transition-transform">
+                        Inquire Now
+                    </button>
+                    <button
+                        class="border border-outline-variant text-on-primary px-12 py-5 rounded-lg text-lg font-bold hover:bg-white/10 transition-colors">
+                        Request a Spec Sheet
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer
+        class="w-full py-12 px-8 flex flex-col md:flex-row justify-between items-center max-w-screen-2xl mx-auto gap-8 border-t border-slate-100 dark:border-slate-900 bg-slate-50 dark:bg-slate-950">
+        <div class="flex flex-col gap-2">
+            <span class="font-notoSerif text-lg font-bold text-slate-900 dark:text-slate-100">The Master
+                Printmaker</span>
+            <p class="font-manrope text-sm text-slate-400">© 2024 The Master Printmaker. An Atelier for the Modern Age.
+            </p>
+        </div>
+        <div class="flex gap-8">
+            <a class="text-slate-400 font-manrope text-sm hover:text-black dark:hover:text-white underline-offset-4 hover:underline transition-all"
+                href="#">Privacy Policy</a>
+            <a class="text-slate-400 font-manrope text-sm hover:text-black dark:hover:text-white underline-offset-4 hover:underline transition-all"
+                href="#">Terms of Service</a>
+            <a class="text-slate-400 font-manrope text-sm hover:text-black dark:hover:text-white underline-offset-4 hover:underline transition-all"
+                href="#">Shipping &amp; Returns</a>
+            <a class="text-slate-400 font-manrope text-sm hover:text-black dark:hover:text-white underline-offset-4 hover:underline transition-all"
+                href="#">Instagram</a>
+        </div>
+    </footer>
+    <!-- Mobile Navigation -->
+    <div
+        class="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 pb-safe h-16 bg-slate-50/90 dark:bg-slate-900/90 backdrop-blur-lg border-t border-slate-200/20 dark:border-slate-800/20 shadow-xl md:hidden z-50">
+        <div
+            class="flex flex-col items-center justify-center text-slate-500 dark:text-slate-400 opacity-70 scale-95 duration-200">
+            <span class="material-symbols-outlined" data-icon="home_app_logo">home_app_logo</span>
+            <span class="font-manrope text-[10px] uppercase tracking-widest">Home</span>
+        </div>
+        <div
+            class="flex flex-col items-center justify-center text-slate-500 dark:text-slate-400 opacity-70 scale-95 duration-200">
+            <span class="material-symbols-outlined" data-icon="auto_awesome_motion">auto_awesome_motion</span>
+            <span class="font-manrope text-[10px] uppercase tracking-widest">Gallery</span>
+        </div>
+        <div
+            class="flex flex-col items-center justify-center text-amber-700 dark:text-amber-500 font-bold bg-amber-50/50 dark:bg-amber-900/20 rounded-xl px-3 py-1 scale-95 duration-200">
+            <span class="material-symbols-outlined" data-icon="history_edu"
+                style="font-variation-settings: 'FILL' 1;">history_edu</span>
+            <span class="font-manrope text-[10px] uppercase tracking-widest">About</span>
+        </div>
+        <div
+            class="flex flex-col items-center justify-center text-slate-500 dark:text-slate-400 opacity-70 scale-95 duration-200">
+            <span class="material-symbols-outlined" data-icon="mail">mail</span>
+            <span class="font-manrope text-[10px] uppercase tracking-widest">Contact</span>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #000000;
+  --color-secondary: #775a19;
+  --color-accent: #e9c176;
+  --color-background: #fcf9f8;
+  --color-surface-container-low: #f6f3f2;
+  
+  --font-inter: 'Manrope', 'Inter', system-ui, sans-serif;
+  --font-outfit: 'Noto Serif', 'Outfit', serif;
+
+  --animate-fade-in: fade-in 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+  --animate-slide-up: slide-up 1.2s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+  --animate-scale-up: scale-up 0.8s ease-out forwards;
+
+  @keyframes fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  @keyframes slide-up {
+    from { opacity: 0; transform: translateY(40px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  @keyframes scale-up {
+    from { transform: scale(0.98); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+  }
+}
+
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: var(--font-inter);
+    background-color: var(--color-background);
+    color: #1c1b1b;
+    -webkit-font-smoothing: antialiased;
+    min-height: 100vh;
+    overflow-x: hidden;
+    zoom: 0.9;
+  }
+
+  h1, h2, h3, h4 {
+    @apply font-outfit;
+  }
+}
+
+@layer utilities {
+  .delay-1 { animation-delay: 150ms; }
+  .delay-2 { animation-delay: 300ms; }
+  .delay-3 { animation-delay: 450ms; }
+  
+  .glass {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+  }
+}
